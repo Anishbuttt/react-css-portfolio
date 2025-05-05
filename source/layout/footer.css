@@ -1,0 +1,151 @@
+.footer {
+    background-color: #000000;
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-height: 15vh;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem 0;
+    width: 100%;
+  }
+  
+  .footer-section {
+    padding: 0 1rem;
+  }
+  
+  .footer-section.brand {
+    flex: 2;  
+  }
+  
+  .footer-section.brand h3 {
+    font-size: 1.2rem;
+    margin: 0 0 0.3rem 0;
+  }
+  
+  .footer-section.brand p {
+    color: #d3d3d3;
+    font-style: italic;
+    font-size: 0.8rem;
+    margin: 0;
+  }
+  
+  .footer-section.links {
+    flex: 3;
+  }
+  
+  .footer-section h4 {
+    font-size: 1rem;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+  }
+  
+  .footer-section h4::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+  }
+  
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.9rem;
+  }
+  
+  .footer-nav a:hover,
+  .footer-nav a.active {
+    color: #d3d3d3;
+  }
+  
+  .footer-bottom {
+    margin-top: 0.8rem;
+    padding: 0.5rem 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .footer-bottom p {
+    font-size: 0.8rem;
+    color: #d3d3d3;
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      max-height: 18vh;
+    }
+    
+    .footer-container {
+      padding: 0.8rem 1rem 0;
+    }
+    
+    .footer-section.brand {
+      flex: 1;
+    }
+    
+    .footer-section.links {
+      flex: 1;
+    }
+    
+    .footer-nav {
+      gap: 0.8rem;
+    }
+    
+    .footer-bottom {
+      margin-top: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .footer {
+      max-height: none;
+    }
+    
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 0.8rem 0.5rem 0;
+    }
+    
+    .footer-section {
+      padding: 0 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .footer-section h4::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .footer-nav {
+      justify-content: center;
+    }
+    
+    .footer-bottom {
+      margin-top: 0.3rem;
+      padding: 0.3rem 0;
+    }
+  }
