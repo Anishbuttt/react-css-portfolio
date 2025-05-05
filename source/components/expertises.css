@@ -1,0 +1,173 @@
+/* expertises.css */
+.expertises-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 120px;
+    margin-top: 40px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+  
+  .circular-progress-container {
+    width: 150px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .circular-progress-container .CircularProgressbar {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .skill-name {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .skill-description {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    max-width: 150px;
+  }
+  
+  @media (max-width: 768px) {
+    .expertises-container {
+      margin-top: 30px;
+      padding: 0px;
+    }
+  
+    .circular-progress-container {
+      width: 130px;
+      height: 180px;
+    }
+  
+    .circular-progress-container .CircularProgressbar {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .skill-name {
+      font-size: 1rem;
+    }
+  
+    .skill-description {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .expertises-container {
+      margin-left: 20px;
+      gap: 40px;
+    }
+  
+    .circular-progress-container {
+      width: 100px;
+      height: 180px;
+    }
+  
+    .circular-progress-container .CircularProgressbar {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .skill-name {
+      font-size: 0.9rem;
+    }
+  
+    .skill-description {
+      font-size: 0.7rem;
+    }
+  }
+  
+  .circular-progress-container {
+    width: 150px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .circular-progress-container .CircularProgressbar {
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+    margin-bottom: 10px;
+  }
+  
+  .skill-name {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .skill-description {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    max-width: 150px;
+  }
+  
+  @media (max-width: 768px) {
+    .expertises-container {
+      margin-left: 50px;
+    }
+  
+    .circular-progress-container {
+      width: 130px;
+      height: 180px;
+    }
+  
+    .circular-progress-container .CircularProgressbar {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .skill-name {
+      font-size: 1rem;
+    }
+  
+    .skill-description {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .expertises-container {
+      margin-left: 20px;
+      gap: 40px;
+    }
+  
+    .circular-progress-container {
+      width: 100px;
+      height: 180px;
+    }
+  
+    .circular-progress-container .CircularProgressbar {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .skill-name {
+      font-size: 0.9rem;
+    }
+  
+    .skill-description {
+      font-size: 0.6rem;
+    }
+  }
+  
